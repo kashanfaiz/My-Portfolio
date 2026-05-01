@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #1e293b;
+    line-height: 1.6;
+    padding: 20px;
+}
+a {
+    text-decoration: none;
+    color: #2563eb;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+a:hover{
+    color:#1d4ed8;
+    text-decoration: underline;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+    border-redius: 12px;
+}
+
+video{
+    max-width: 100%;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0,0,0.12)
+}
+/*================MAIN TABLE DESIGN===============*/
+body > table{
+    width: 100%;
+    background:#ffffff;
+    border: none !important;
+    border-radius: 18px;
+    overflow: hidden;
+    margin-bottom: 25;
+    box-shadow: 0 10px 30px rgba(15,23,42,0.08);
+}
+table{
+    border-collapse: collapse;
+}
+
+td, th{
+    border: 1px solid #e2e8f0;
+    padding: 12px;
+    vertical-align: top;
+}
+/*================HEADINGS================*/
+h1{
+    font-size: 34px;
+    color: #0f172a;
+    margin-bottom: 8px;
+}
+h2{
+    font-size: 26px;
+    color: #1e3a9a;
+    margin-bottom: 12px;
+}
+h3{
+    font-size: 20px;
+    color: #0f172a;
+    margin-bottom: 8px;
+}
+h4{
+    font-size: 17px;
+    color: #334155;
+    margin-bottom: 8px;
+}
+p{
+    margin-bottom: 10px;
+    color: #475569;
+}
+/*============LISTS==============*/
+ul, ol {
+    margin-left: 25px;
+    padding-left: 10px;
+}
+li{
+    margin-bottom: 10px;
+    color: #334155;
+}
+/*=================TOP HEADER TABLE=================*/
+body > table:first-of-type td{
+    background: linear-gradient(135deg, #0f172a, #1d4ed8) !important;
+    color: white !important;
+    text-align: center;
+}
+body > table:first-of-type h1,
+body > table:first-of-type h2,
+body > table:first-of-type h3,
+body > table:first-of-type p,
+body > table:first-of-type font{
+    color: white !important;
+}
+/*=================SECTION TITLES WITH BGCOLOR===================*/
+[bgcolor] {
+    background: linear-gradient(135deg, #2563eb, #1e40af) !important;
+}
+[bgcolor] h1,
+[bgcolor] h2,
+[bgcolor] h3,
+[bgcolor] h4,
+[bgcolor] p,
+[bgcolor] strong,
+[bgcolor] font,
+[bgcolor] a{
+    color: white !important;
+}
+/*===========PROFILE IMAGE / SCREENSHOTS============*/
+img[alt*="Photo"],
+img[alt*="Photo"],
+img[alt*="Logo"],
+img[alt*="Screenshot"],
+img[alt*="Dashboard"],
+img[alt*="Profile"],
+img[alt*="System"] {
+    border: 4px solid #dbeafe;
+    background: #fff;
+    padding: 6px;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.12);
+}
+/*==============INNER TABLES==============*/
+table table{
+    background: #f8fafc;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: none;
+}
+table table td,
+table table th{
+    border: 1px solid #e5e7eb;
+}
+/*================SOCIAL MEDIA BLOCKS=========================*/
+a[href*="wa.me"],
+a[href*="instagram.com"],
+a[href*="youtube.com"],
+a[href*="tikTok.com"] {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 10px 16px;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #0f172a !important;
+    box-shadow: 0 4px 12px rgba(0,0,0.0.08);
+}
+a[href*="wa.me"]:hover,
+a[href*="instagram.com"]:hover,
+a[href*="youtube.com"]:hover,
+a[href*="tiktok.com"]:hover {
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+/*==============BUTTON-LIKE NAVIGATION LINKS=================*/
+a[href$="Index.html"],
+a[href$="My Education.html"],
+a[href$="My Project.html"]{
+    display: inline-block;
+    padding: 12px 18px;
+    margin: 6px;
+    border-radius: 10px;
+    background: #2563eb;
+    color: #fff !important;
+    box-shadow: 0 6px 16px rgba(37, 99, 235, 0.2);
+}
+a[href$="Index.html"]:hover,
+a[href$="My Education.html"]:hover,
+a[href$="My Project.html"]:hover{
+    background: #1d4ed8;
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+/*================PROFILE CARD SECTION===================*/
+body > table:nth-of-type(1) img{
+    border-radius: 16px;
+    object-fit: cover;
+    margin: 0 auto 12px;
+}
+body > table:nth-of-type(1) td{
+    vertical-align: middle;
+}
+/*=================CONTENT CARDS LOOK=======================*/
+body > table td{
+    background-clip: padding-box;
+}
+body > table:not(:first-of-type):not(:last-of-type){
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+body > table:not(:first-of-type):not(:last-of-type):hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 36px rgba(15,23,42,0.12);
+}
+/*==============PROJECT PAGE SPECIAL TABLES=================*/
+th{
+    background: #e0ecff;
+    color: #1eda8a;
+    font-size: 16px;
+}
+/*===============FOOTER TABLE===================*/
+body > table:last-of-type td{
+    background: #0f172a !important;
+    color: #ffffff !important;
+    text-align: center;
+}
+body > table:last-of-type p,
+body > table:last-of-type Strong,
+body > table:last-of-type font{
+    color: #ffffff !important;
+}
+/*===============TEXT IMPROVEMENTS====================*/
+strong{
+    color: #0f172a;
+}
+em{
+    color: #64748b;
+}
+/*===============VIDEO CENTERING======================*/
+center {
+    display: block;
+    text-align: center;
+}
+/*================RESPONSIVE DESIGN===================*/
+@media (max-width: 992px) {
+    body{
+        padding:12px;
+    }
+    h1{
+        font-size: 28px;
+    }
+    h2{
+        font-size: 22px
+    }
+    h3{
+        font-size: 18px;
+    }
+    td,th{
+        padding: 10px;
+    }
+}
+@media(max-width: 768px){
+    body{
+        padding: 10px;
+    }
+    body > table, table, tr, td, th{
+        display: block;
+        width: 100% !important;
+    }
+    table table{
+        display: block;
+        width: 100%;
+    }
+    img{
+        margin: auto;
+    }
+    video{
+        width: 100%;
+        height: auto;
+    }
+    a[href$="Index.html"],
+    a[href$="My Education.html"],
+    a[href$="My Project.html"]{
+        display: block;
+        width: fit-content;
+        margin: 8px auto;
+        text-align: center;
+    }
+}
+/*================EXTRA POLISH================*/
+body > table:nth-of-type(2),
+body > table:nth-of-type(3),
+body > table:nth-of-type(4),
+body > table:nth-of-type(5),
+body > table:nth-of-type(6),
+body > table:nth-of-type(7),
+body > table:nth-of-type(8),
+body > table:nth-of-type(9){
+    border-left: 6px solid #2563eb;
+}
